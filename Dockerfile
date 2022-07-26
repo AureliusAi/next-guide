@@ -2,9 +2,7 @@ FROM alpine
 
 LABEL maintainer="paul.p.markus@gmail.comm"
 
-RUN apk add --update nodejs nodejs-npm
-
-RUN npm install --global yarn
+RUN apk add --update nodejs nodejs-npm yarn
 
 COPY . /src
 
