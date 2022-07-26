@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine
 
 LABEL maintainer="paul.p.markus@gmail.comm"
 
