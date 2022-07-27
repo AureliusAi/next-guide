@@ -2,9 +2,9 @@ FROM alpine
 
 LABEL maintainer="paul...markus@gmail.com"
 
-RUN apk add --update \
+RUN apk add --update --no-cache \
   nodejs \
-  nodejs-npm \
+  npm \
   yarn
 
 COPY . /src
