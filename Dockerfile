@@ -1,8 +1,11 @@
 FROM alpine
 
-LABEL maintainer="paul.p.markus@gmail.comm"
+LABEL maintainer="paul.p.markus@gmail.com"
 
-RUN apk add --update nodejs nodejs-npm yarn
+RUN apk add --update --no-cache \
+  nodejs \
+  nodejs-npm \
+  yarn
 
 COPY . /src
 
