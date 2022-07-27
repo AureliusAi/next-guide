@@ -12,11 +12,11 @@ WORKDIR /src
 
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 8082
 
 RUN npm run build
 
-ENTRYPOINT ["npm", "run", "dev"]
+ENTRYPOINT ["npm", "run", "dev", "--", "-p", "8082"]
 
 
 
