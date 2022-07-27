@@ -16,7 +16,7 @@ EXPOSE 8080
 
 RUN npm run build
 
-ENTRYPOINT ["npx", "serve", "out"]
+ENTRYPOINT ["npm", "run", "dev"]
 
 
 
